@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+import { browserHistory, Router, Route } from 'react-router';
 
-class Home extends Component {
-  render() {
-    return (<h1>Test</h1>);
-  }
-}
+import Home from './components/Home';
+import About from './components/About';
 
-render(<Home />, document.getElementById('container'));
+render(
+    <Router history={browserHistory}>
+      <Route path="/" component={Home} />
+      <Route path="/about" component={About} />
+    </Router>,
+    document.getElementById('container')
+  );
