@@ -17,5 +17,10 @@
     "babel-preset-react": "^6.23.0",
     "serve": "^3.4.1",
     "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-router": "^3.0.2"
   }
 }
